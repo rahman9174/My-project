@@ -1,0 +1,297 @@
+<%-- 
+    Document   : HomePage
+    Created on : Jul 26, 2021, 6:35:03 AM
+    Author     : xxx
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            #img{
+                width:10%;
+                height: 15%;
+                margin-right: 10px;
+            }
+            #img1{
+                width:10%;
+                height: 10%;
+                margin-left: 40px;
+                border-radius: 50%;
+            }
+
+            .one{
+                margin-left: 10px;
+            }
+            .one:hover{
+                border-bottom: 2px solid white;
+            }
+            .two{
+                border-bottom: 2px solid black;
+
+            }
+            .body-image{
+                width:100%;
+                height: 65%;
+                margin-top:5px;
+            }
+            .content-div{
+
+            }
+            button{
+                float: right;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 15px;
+            }
+            
+
+        </style>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <bod>
+        <div class="container-fluid">
+            <navbar class='navbar navbar-expand-lg navbar-light bg-dark' style="">
+                <img  id="img" src='images/gif.gif' alt="logo"/>
+                <a class='navbar-brand text-white   one'  href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>Home</a>
+                <a class='navbar-brand text-white one'  href="#"><i class="fab fa-creative-commons-share"></i>Your Order</a>
+                <a class='navbar-brand text-white one'  href="#">Categories</a>
+                <a class='navbar-brand text-white one'  href="#">Contact us</a>
+                <a class='navbar-brand text-white one'  href="#">About us</a>
+                <form class="form-inline my-2 my-lg-0 " style="margin-left:40px" >
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" >
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <button type="button" title="Register Your self" class="btn btn-primary btn-outline-success my-2 my-sm-0">SignIn</button>
+                    <button type="button" title="open your portal by login" class="btn btn-success btn-outline-success my-2 my-sm-0">Login</button>
+                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true" style="color:white;font-size: 40px;"></i></a>
+                </form>
+
+
+            </navbar>
+        </div>
+        <div class="mt-3 ml-4 two"><h2>Order your food</h2></div>
+        <div class="container justify-content-auto">
+            <div class="row">
+                <div class="col-md-4 mt-4  border border-black content-div">
+                    <img src="images/biryani.jpg" class="body-image" >
+                    <div class="container">
+                        <div class="row border">
+                            <div class="col-md-6 ">
+                                <div class="ustify-content-center">
+                                    <p class="pt-0 mt-0"><b>Biryani<br>Price : Rs.150/.<br> Yummy  <br>20% off</b><span></span><span></span>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-1 jsutify-content-center">
+                                <button class="btn btn-primary">Order Now</button>
+                                <button class="btn btn-primary">Add to Cart </button>
+                            </div>
+                                
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4  border border-black content-div">
+                    <img src="images/burger.jpg" class="body-image" >
+                    <div class="container">
+                        <div class="row border">
+                            <div class="col-md-6">
+                                <div class="">
+                                    <p class="pt-0 mt-0"><b>Burger<br>Price : Rs.150/.<br> Yummy Burger <br>20% off</b><span></span><span></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-1"><button class="btn btn-primary">Order Now</button>
+                                <button class="btn btn-primary">Add to Cart </button></div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="col-md-4 mt-4  border border-black content-div">
+                    <img src="images/butter-chicken.jpg" class="body-image" >
+                    <div class="container">
+                        <div class="row border">
+                            <div class="col-md-6">
+                                <div class="">
+                                    <p class="pt-0 mt-0"><b>Butter chicken<br>Price : Rs.150/.<br>Delicious <br>20% off</b><span></span><span></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-1"><button class="btn btn-primary">Order Now</button>
+                                <button class="btn btn-primary">Add to Cart </button></div>
+                        </div>
+                    </div>
+                </div>                  
+            </div> 
+
+            <div class="row">
+                <div class="col-md-4 mt-4  border border-black content-div">
+                    <img src="images/momos.jpg" class="body-image" >
+                    <div class="container">
+                        <div class="row border">
+                            <div class="col-md-6">
+                                <div class="">
+                                    <p class="pt-0 mt-0"><b>Momos<br>Price : Rs.150/.<br> Yummy & Testy <br>20% off</b><span></span><span></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-1"><button class="btn btn-primary">Order Now</button>
+                                <button class="btn btn-primary">Add to Cart </button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4  border border-black content-div">
+                    <img src="images/pizza.jpg" class="body-image" >
+                    <div class="container">
+                        <div class="row border">
+                            <div class="col-md-6">
+                                <div class="">
+                                    <p class="pt-0 mt-0"><b>Pizza<br>Price : Rs.150/.<br> Testy <br>20% off</b><span></span><span></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-1"><button class="btn btn-primary">Order Now</button>
+                                <button class="btn btn-primary">Add to Cart </button></div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="col-md-4 mt-4  border border-black content-div">
+                    <img src="images/donut.jpg" class="body-image" >
+                    <div class="container">
+                        <div class="row border">
+                            <div class="col-md-6">
+                                <div class="">
+                                    <p class="pt-0 mt-0"><b>Donut<br>Price : Rs.150/.<br> Yummy <br>20% off</b><span></span><span></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-1"><button class="btn btn-primary">Order Now</button>
+                                <button class="btn btn-primary">Add to Cart </button></div>
+                        </div>
+                    </div>
+                </div>                  
+            </div> 
+
+            <div class="row">
+                <div class="col-md-4 mt-4  border border-black content-div">
+                    <img src="images/dossa.jpg" class="body-image" >
+                    <div class="container">
+                        <div class="row border">
+                            <div class="col-md-6">
+                                <div class="">
+                                    <p class="pt-0 mt-0"><b>Dossa<br>Price : Rs.150/.<br> Yummy <br>20% off</b><span></span><span></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-1"><button class="btn btn-primary">Order Now</button>
+                                <button class="btn btn-primary">Add to Cart </button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4  border border-black content-div">
+                    <img src="images/chaumin.jpg" class="body-image" >
+                    <div class="container">
+                        <div class="row border">
+                            <div class="col-md-6">
+                                <div class="">
+                                    <p class="pt-0 mt-0"><b>Chaumin<br>Price : Rs.150/.<br> Spicy <br>20% off</b><span></span><span></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-1"><button class="btn btn-primary">Order Now</button>
+                                <button class="btn btn-primary">Add to Cart </button></div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="col-md-4 mt-4  border border-black content-div">
+                    <img src="images/fried chicken.jpg" class="body-image" >
+                    <div class="container">
+                        <div class="row border">
+                            <div class="col-md-6">
+                                <div class="">
+                                    <p class="pt-0 mt-0"><b>Fried Chicken<br>Price : Rs.150/.<br> Yummy <br>20% off</b><span></span><span></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-1"><button class="btn btn-primary">Order Now</button>
+                                <button class="btn btn-primary">Add to Cart </button></div>
+                        </div>
+                    </div>
+                </div>                  
+            </div> 
+
+            <div class="row">
+                <div class="col-md-4 mt-4  border border-black content-div">
+                    <img src="images/veg biryan.jpg" class="body-image" >
+                    <div class="container">
+                        <div class="row border">
+                            <div class="col-md-6">
+                                <div class="">
+                                    <p class="pt-0 mt-0"><b>Veg Biryani<br>Price : Rs.150/.<br> Yummy<br>20% off</b><span></span><span></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-1"><button class="btn btn-primary">Order Now</button>
+                                <button class="btn btn-primary">Add to Cart </button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4  border border-black content-div">
+                    <img src="images/chicken dossa.jpg" class="body-image" >
+                    <div class="container">
+                        <div class="row border">
+                            <div class="col-md-6">
+                                <div class="">
+                                    <p class="pt-0 mt-0"><b>Chicken Dossa<br>Price : Rs.150/.<br> Yummy <br>20% off</b><span></span><span></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-1"><button class="btn btn-primary">Order Now</button>
+                                <button class="btn btn-primary">Add to Cart </button></div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="col-md-4 mt-4  border border-black content-div">
+                    <img src="images/handi pakwaan.jpg" class="body-image" >
+                    <div class="container">
+                        <div class="row border">
+                            <div class="col-md-6">
+                                <div class="">
+                                    <p class="pt-0 mt-0"><b>Handi Pakwan<br>Price : Rs.150/.<br>south dish <br>20% off</b><span></span><span></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-1"><button class="btn btn-primary">Order Now</button>
+                                <button class="btn btn-primary">Add to Cart </button></div>
+                        </div>
+                    </div>
+                </div>                  
+            </div> 
+        </div>
+
+        <div class="container mt-2 ">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-left">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="HomePage1.jsp">1</a></li>
+                    <li class="page-item"><a class="page-link" href="HomePage2.jsp">2</a></li>
+                    <li class="page-item"><a class="page-link" href="HomePage3.jsp">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+    </body>
+</html>
